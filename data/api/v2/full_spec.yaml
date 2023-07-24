@@ -1519,6 +1519,10 @@ components:
           type: string
         tags:
           $ref: '#/components/schemas/TagsEventAttribute'
+        test_level:
+          description: The event test level.
+          example: session
+          type: string
         timestamp:
           $ref: '#/components/schemas/TimestampEventAttribute'
       type: object
@@ -2521,7 +2525,7 @@ components:
         links:
           $ref: '#/components/schemas/CIAppResponseLinks'
         meta:
-          $ref: '#/components/schemas/CIAppResponseMetadata'
+          $ref: '#/components/schemas/CIAppResponseMetadataWithPagination'
       type: object
     CIAppTestsBucketResponse:
       description: Bucket values.
